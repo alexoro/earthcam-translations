@@ -1,0 +1,58 @@
+[
+	{
+	    "id": "cities",
+		"items": [
+			{"name": "Amsterdam", "link": "http://video2.earthcam.com:1935/fecnetwork/4098.flv/playlist.m3u8", "image": "cities_amsterdam.jpg"},
+			{"name": "Austin", "link": "http://video2.earthcam.com:1935/fecnetwork/paradiseon6.flv/playlist.m3u8", "image": "cities_austin.jpg"},
+			{"name": "Balcony Cats Meow", "link": "http://video2.earthcam.com:1935/fecnetwork/4282.flv/playlist.m3u8", "image": "cities_balcony_cats_meow.jpg"},
+			{"name": "Belmont", "link": "http://video2.earthcam.com:1935/fecnetwork/5324.flv/playlist.m3u8", "image": "cities_belmont.jpg"},
+			{"name": "Boston", "link": "http://video2.earthcam.com:1935/fecnetwork/4049sonesta.flv/playlist.m3u8", "image": "cities_boston.jpg"},
+			{"name": "Budapest", "link": "http://video2.earthcam.com:1935/fecnetwork/hotelvictoria2.flv/playlist.m3u8", "image": "cities_budapest.jpg"},
+			{"name": "Chicago", "link": "http://video2.earthcam.com:1935/fecnetwork/5187.flv/playlist.m3u8", "image": "cities_chicago.jpg"},
+			{"name": "Duffy Square", "link": "http://video2.earthcam.com:1935/fecnetwork/hdtimes10.flv/playlist.m3u8", "image": "cities_duffy_square.jpg"},
+			{"name": "Elvis Wedding Chapel", "link": "http://video2.earthcam.com:1935/fecnetwork/5359.flv/playlist.m3u8", "image": "cities_elvis_wedding_chapel.jpg"},
+			{"name": "Gettysburg Battlefield", "link": "http://video2.earthcam.com:1935/fecnetwork/5536.flv/playlist.m3u8", "image": "cities_gettysburg.jpg"},
+			{"name": "Hamburg", "link": "http://video2.earthcam.com:1935/fecnetwork/3847fairmont.flv/playlist.m3u8", "image": "cities_hamburg.jpg"},
+			{"name": "Hillsboro Lighthouse", "link": "http://video2.earthcam.com:1935/fecnetwork/4135.flv/playlist.m3u8", "image": "cities_hillsboro.jpg"},
+			{"name": "Iceland", "link": "http://video2.earthcam.com:1935/fecnetwork/5299.flv/playlist.m3u8", "image": "cities_iceland.jpg"},
+			{"name": "Midtown NYC", "link": "http://video2.earthcam.com:1935/fecnetwork/5321.flv/playlist.m3u8", "image": "cities_midtown.jpg"},
+			{"name": "Moscow Skyline", "link": "http://video2.earthcam.com:1935/fecnetwork/moscowHD1.flv/playlist.m3u8", "image": "cities_moscow_scyline.jpg"},
+			{"name": "New Orlean - Bourbon Street", "link": "http://video2.earthcam.com:1935/fecnetwork/4280.flv/playlist.m3u8", "image": "cities_new_orlean_bourbon.jpg"},
+			{"name": "Pitsburgh Church", "link": "http://video2.earthcam.com:1935/fecnetwork/warholchurch.flv/playlist.m3u8", "image": "cities_pitsburgh_church.jpg"},
+			{"name": "Prague", "link": "http://video2.earthcam.com:1935/fecnetwork/4162.flv/playlist.m3u8", "image": "cities_prague.jpg"},
+			{"name": "Sedona Red Rock", "link": "http://video2.earthcam.com:1935/fecnetwork/sedonawebcam.flv/playlist.m3u8", "image": "cities_sedona.jpg"},
+			{"name": "Statue of Liberty", "link": "http://video2.earthcam.com:1935/fecnetwork/libertyHD1.flv/playlist.m3u8", "image": "cities_statue_of_liberty.jpg"},
+			{"name": "Times Square", "link": "http://video2.earthcam.com:1935/fecnetwork/4017timessquare.flv/playlist.m3u8", "image": "cities_times_square.jpg"},
+			{"name": "Tokyo", "link": "http://video2.earthcam.com:1935/fecnetwork/tokyo1.flv/playlist.m3u8", "image": "cities_tokyo.jpg"},
+			{"name": "Valetta Malta", "link": "http://video2.earthcam.com:1935/fecnetwork/5245.flv/playlist.m3u8", "image": "cities_valetta_malta.jpg"},
+			{"name": "Welcome to fabulous Las Vegas", "link": "http://video2.earthcam.com:1935/fecnetwork/eclasvegas.flv/playlist.m3u8", "image": "cities_welcome_to_lv.jpg"}
+	},
+	{
+	    "id": "nature",
+		"items": [
+			{"name": "Anguilla Meads Bay", "link": "http://video2.earthcam.com:1935/fecnetwork/anguilla.flv/playlist.m3u8", "image": "nature_anguilla.jpg"},
+			{"name": "Aruba Bucuti Beach Wing", "link": "http://video2.earthcam.com:1935/fecnetwork/4646.flv/playlist.m3u8", "image": "nature_aruba_bucuti.jpg"},
+			{"name": "Aruba Eagle Beach", "link": "http://video2.earthcam.com:1935/fecnetwork/4644.flv/playlist.m3u8", "image": "nature_aruba_eagle.jpg"},
+			{"name": "Boracay", "link": "http://video2.earthcam.com:1935/fecnetwork/philippinesHD1.flv/playlist.m3u8", "image": "nature_boracay.jpg"},
+			{"name": "Costa Rica, Playa Grande", "link": "http://video2.earthcam.com:1935/fecnetwork/5358.flv/playlist.m3u8", "image": "nature_costarica.jpg"},
+			{"name": "Kauai", "link": "http://video2.earthcam.com:1935/fecnetwork/4617.flv/playlist.m3u8", "image": "nature_kauai.jpg"},
+			{"name": "Lauderdale-By-The-Sea Beach 2", "link": "http://video2.earthcam.com:1935/fecnetwork/windjammerHD2.flv/playlist.m3u8", "image": "nature_lauderdale.jpg"},
+			{"name": "Ma'in Hot Springs", "link": "http://video2.earthcam.com:1935/fecnetwork/4515.flv/playlist.m3u8", "image": "nature_main_hot_springs.jpg"},
+			{"name": "Myrtle Beach", "link": "http://video2.earthcam.com:1935/fecnetwork/3635.flv/playlist.m3u8", "image": "nature_myrtle.png"},
+			{"name": "Niagara", "link": "http://video2.earthcam.com:1935/fecnetwork/4559.flv/playlist.m3u8", "image": "nature_niagara.jpg"},
+			{"name": "Patterson Falls", "link": "http://video2.earthcam.com:1935/fecnetwork/4918.flv/playlist.m3u8", "image": "nature_pattersonfalls.jpg"},
+			{"name": "Sandestin Beach, Destin", "link": "http://video2.earthcam.com:1935/fecnetwork/5663.flv/playlist.m3u8", "image": "nature_sandestin.jpg"},
+			{"name": "Seaside Park", "link": "http://video2.earthcam.com:1935/fecnetwork/5423.flv/playlist.m3u8", "image": "amsterdam.jpg"},
+			{"name": "St. Croix", "link": "http://video2.earthcam.com:1935/fecnetwork/4480.flv/playlist.m3u8", "image": "nature_st_croix.jpg"},
+			{"name": "Thassos, Greece", "link": "http://video2.earthcam.com:1935/fecnetwork/3792.flv/playlist.m3u8", "image": "nature_thassos.png"}
+	},
+	{
+	    "id": "animals",
+		"items": [
+			{"name": "Elephants, Bali", "link": "http://video2.earthcam.com:1935/fecnetwork/4338.flv/playlist.m3u8", "image": "animals_elephants_bali.jpg"},
+			{"name": "Elephants, Bali 2", "link": "http://video2.earthcam.com:1935/fecnetwork/4337.flv/playlist.m3u8", "image": "animals_elephants_bali2.jpg"},
+			{"name": "Giraffs", "link": "http://video2.earthcam.com:1935/fecnetwork/4798.flv/playlist.m3u8", "image": "animals_giraffs.jpg"},
+			{"name": "Owls", "link": "http://video2.earthcam.com:1935/fecnetwork/4968.flv/playlist.m3u8", "image": "animals_owls.jpg"},
+			{"name": "Panda", "link": "http://video2.earthcam.com:1935/fecnetwork/pandacam.flv/playlist.m3u8", "image": "animals_panda.jpg"}
+	},
+]
