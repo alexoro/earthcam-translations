@@ -1,37 +1,50 @@
 package com.uas.translations;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
+
+import com.uas.translations.events.OnTranslationRequestedEvent;
+import com.uas.translations.phone.PhoneMainFragment;
+import com.uas.translations.player.PlayerActivity;
+import com.uas.translations.utils.ActivityUtils;
+
+import de.greenrobot.event.EventBus;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EventBus mEventBus;
+    private boolean mIsMobile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActivityUtils.removeActivityBackgroundCompat(this);
         setContentView(R.layout.activity_main);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        mEventBus = EventBusProvider.getInstance();
+        mIsMobile = getResources().getBoolean(R.bool.is_mobile);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (mIsMobile) {
+            PhoneMainFragment fragment = PhoneMainFragment.newInstance();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.container, fragment)
+                    .commit();
         }
 
-        return super.onOptionsItemSelected(item);
+        mEventBus.register(this);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mEventBus.unregister(this);
+    }
+
+    public void onEventMainThread(OnTranslationRequestedEvent event) {
+        Intent intent = PlayerActivity.createLaunchIntent(this, event.getCameraInfo());
+        startActivity(intent);
+    }
+
 }

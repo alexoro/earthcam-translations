@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:cacheColorHint="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:animationCache="false"
+    android:scrollingCache="false"
+    android:requiresFadingEdge="none"
+    android:scrollbars="vertical"
+    android:clipToPadding="false"
+    android:fastScrollEnabled="true"
+    android:fastScrollAlwaysVisible="true"
+    android:listSelector="@android:color/transparent"
+    />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_primary">#282828</color>
+    <color name="ripple_color_light">#19ffffff</color>
+    <color name="tab_text_color">#fff</color>
+    <color name="list_text_color">#000</color>
+    <color name="ripple_color_dark">#20444444</color>
+
+</resources>
