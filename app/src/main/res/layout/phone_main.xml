@@ -19,8 +19,8 @@
         app:popupTheme="@style/AppTheme.Toolbar.Popup"
         app:titleTextAppearance="@style/AppTheme.Toolbar.TitleText.Large"
         app:title="@string/app_name"
-        app:subtitle="@string/empty">
-    </android.support.v7.widget.Toolbar>
+        app:subtitle="@string/empty"
+        />
 
     <com.uas.translations.phone.TabLayoutWithInvalidate
         android:id="@+id/tabs"

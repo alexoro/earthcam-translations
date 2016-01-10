@@ -22,15 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.uas.videoplayer.mediaplayerimpl.VideoPlayerTestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
 
         <activity
-            android:name=".player.PlayerActivity">
-        </activity>
+            android:name=".player.PlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorLandscape"
+            />
 
     </application>
 
