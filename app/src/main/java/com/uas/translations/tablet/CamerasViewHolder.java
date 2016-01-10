@@ -1,4 +1,4 @@
-package com.uas.translations.phone;
+package com.uas.translations.tablet;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -23,39 +23,35 @@ import de.greenrobot.event.EventBus;
 /**
  * Created by UAS on 09.01.2016.
  */
-public class CameraInfoViewHolder extends RecyclerView.ViewHolder {
+public class CamerasViewHolder extends RecyclerView.ViewHolder {
 
-    public static CameraInfoViewHolder newInstance(ViewGroup parent,
-                                                   ImageLoader imageLoader,
-                                                   EventBus eventBus,
-                                                   List<CameraInfo> cameraInfoList) {
+    public static CamerasViewHolder newInstance(ViewGroup parent,
+                                                ImageLoader imageLoader,
+                                                EventBus eventBus) {
         View view = LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.phone_camera_entry, parent, false);
-        return new CameraInfoViewHolder(view, imageLoader, eventBus, cameraInfoList);
+                .inflate(R.layout.tablet_cameras_entry, parent, false);
+        return new CamerasViewHolder(view, imageLoader, eventBus);
     }
 
 
     private ImageLoader mImageLoader;
     private EventBus mEventBus;
-    private List<CameraInfo> mCameraInfoList;
-    private int mPosition;
+    private CameraInfo mCameraInfo;
     private ImageView mIcon;
     private TextView mLabel;
     private ImageViewAware mImageViewAware;
     private DisplayImageOptions mDisplayImageOptions;
 
 
-    public CameraInfoViewHolder(View itemView,
-                                ImageLoader imageLoader,
-                                EventBus eventBus,
-                                List<CameraInfo> cameraInfoList) {
+    public CamerasViewHolder(View itemView,
+                             ImageLoader imageLoader,
+                             EventBus eventBus) {
         super(itemView);
 
         mImageLoader = imageLoader;
-        mCameraInfoList = cameraInfoList;
         mEventBus = eventBus;
-        mPosition = -1;
+        mCameraInfo = null;
 
         mIcon = (ImageView) itemView.findViewById(R.id.icon);
         mLabel = (TextView) itemView.findViewById(R.id.label);
@@ -71,20 +67,18 @@ public class CameraInfoViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mPosition >= 0) {
-                    CameraInfo cameraInfo = mCameraInfoList.get(mPosition);
-                    OnTranslationRequestedEvent event = new OnTranslationRequestedEvent(cameraInfo);
+                if (mCameraInfo != null) {
+                    OnTranslationRequestedEvent event = new OnTranslationRequestedEvent(mCameraInfo);
                     mEventBus.post(event);
                 }
             }
         });
     }
 
-    public void bind(int position) {
-        mPosition = position;
-        CameraInfo cameraInfo = mCameraInfoList.get(position);
-        mLabel.setText(cameraInfo.getName());
-        mImageLoader.displayImage(cameraInfo.getImageUrl(), mImageViewAware, mDisplayImageOptions);
+    public void bind(int position, List<CameraInfo> cameraInfoList) {
+        mCameraInfo = cameraInfoList.get(position);
+        mLabel.setText(mCameraInfo.getName());
+        mImageLoader.displayImage(mCameraInfo.getImageUrl(), mImageViewAware, mDisplayImageOptions);
     }
 
 }

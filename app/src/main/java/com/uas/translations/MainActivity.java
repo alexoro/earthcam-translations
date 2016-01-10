@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.uas.translations.events.OnTranslationRequestedEvent;
 import com.uas.translations.phone.PhoneMainFragment;
 import com.uas.translations.player.PlayerActivity;
+import com.uas.translations.tablet.CamerasFragment;
+import com.uas.translations.tablet.CategoriesFragment;
 import com.uas.translations.utils.ActivityUtils;
 
 import de.greenrobot.event.EventBus;
@@ -30,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.container, fragment)
+                    .commit();
+        } else {
+            CategoriesFragment categoriesFragment = CategoriesFragment.newInstance();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.categories, categoriesFragment)
+                    .commit();
+            CamerasFragment camerasFragment = CamerasFragment.newInstance();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.cameras, camerasFragment)
                     .commit();
         }
 
